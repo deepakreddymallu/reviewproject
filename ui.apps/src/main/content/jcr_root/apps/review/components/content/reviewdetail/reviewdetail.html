@@ -1,0 +1,11 @@
+ReviewDetail
+${properties.techone} <br/>
+${properties.reviewoption}<br/>
+${properties.reviewcheck}<br/>
+${properties.reviewtype}
+
+<sly data-sly-use.reviewmodel="${'com.review.core.models.ReviewDetail'}" /sly>
+<sly data-sly-list="${reviewmodel.listTech}"><br/>
+${item.subtechone}
+${item.subtechtwo}<br/>
+</sly> 

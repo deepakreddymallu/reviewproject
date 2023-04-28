@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/deepak/clientlibs"/>
+    <filter root="/apps/deepak/components"/>
+    <filter root="/apps/deepak/i18n"/>
+	<filter root="/apps/review"/>
+	<filter root="/apps/dialog-pariticipant-step"/>
+</workspaceFilter>

@@ -1,0 +1,21 @@
+<h1> Composite Component</h1>
+
+<!--<sly data-sly-use.composite="${'com.adobe.cq.wcm.core.components.models.CompositeDetail'}">
+<sly data-sly-list.keyName="${composite.subTechnologies}">
+
+<li>keyname = ${keyName}</li>
+
+ 
+</sly> -->
+
+<sly data-sly-use.composite="${'com.review.core.models.CompositeDetail'}">
+            <sly data-sly-use.subtechnologies="${composite.subTechnologies}">
+    <sly data-sly-list="${subtechnologies}">
+    <p><b>Heading is::</b></p>
+            <p>${item.key}</p>
+     </sly>  
+
+            </sly>
+ 
+ 
+</sly>

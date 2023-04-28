@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Basic"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <role
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Role name"
+                                                fieldLabel="Technology role"
+                                                name="./role"/>
+                                            <level
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Select level"
+                                                name="./level">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Select Level"
+                                                        value="default"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Level 1"
+                                                        value="level1"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Level 2"
+                                                        value="level2"/>
+                                                    <level3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Level 3"
+                                                        value="level3"/>
+                                                </items>
+                                            </level>
+                                            <linkURL
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                                                fieldDescription="Links the title. Path to a content page, external URL or page anchor."
+                                                fieldLabel="Link"
+                                                name="./linkURL"
+                                                rootPath="/content"/>
+                                            <iscloud
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldLabel="Is Cloud based ?"
+                                                name="./iscloud"
+                                                text="Is Cloud based?"
+                                                uncheckedValue="false"/>
+                                            <cloud
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                name="./cloudtype"
+                                                required="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <aws
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                                        checked="{Boolean}true"
+                                                        text="AWS"
+                                                        value="aws"/>
+                                                    <gcp
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                                        text="GCP"
+                                                        value="gcp"/>
+                                                </items>
+                                            </cloud>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                            <columns2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <role
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Role name"
+                                                fieldLabel="Technology role"
+                                                name="./role"/>
+                                            <level
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Select level"
+                                                name="./level">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Select Level"
+                                                        value="default"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Level 1"
+                                                        value="level1"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Level 2"
+                                                        value="level2"/>
+                                                    <level3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Level 3"
+                                                        value="level3"/>
+                                                </items>
+                                            </level>
+                                            <linkURL
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                                                fieldDescription="Links the title. Path to a content page, external URL or page anchor."
+                                                fieldLabel="Link"
+                                                name="./linkURL"
+                                                rootPath="/content"/>
+                                            <iscloud
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldLabel="Is Cloud based ?"
+                                                name="./iscloud2"
+                                                text="Is Cloud based?"
+                                                uncheckedValue="false"
+                                                value="{Boolean}true"/>
+                                            <cloud
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                name="./cloudtype2"
+                                                required="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <aws
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                                        checked="{Boolean}true"
+                                                        text="AWS"
+                                                        value="aws"/>
+                                                    <gcp
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                                        text="GCP"
+                                                        value="gcp"/>
+                                                </items>
+                                            </cloud>
+                                            <data
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./data">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <fieldset
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <areatext
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Area Text"
+                                                                    name="field1"/>
+                                                                <location
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Location"
+                                                                    name="field2"/>
+                                                                <isretail
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    name="field3"
+                                                                    text="Is Retail ?">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <yes
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Yes"
+                                                                            value="yes"/>
+                                                                        <no
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="No"
+                                                                            value="no"/>
+                                                                    </items>
+                                                                </isretail>
+                                                            </items>
+                                                        </fieldset>
+                                                    </items>
+                                                </field>
+                                            </data>
+                                            <well
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fieldset
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <areatext
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Area Text"
+                                                                name="./areatext2"/>
+                                                            <location
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Location"
+                                                                name="./location2"/>
+                                                            <isretail
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                name="./isretail3"
+                                                                text="Is Retail ?">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <yes
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Yes"
+                                                                        value="yes"/>
+                                                                    <no
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="No"
+                                                                        value="no"/>
+                                                                </items>
+                                                            </isretail>
+                                                        </items>
+                                                    </fieldset>
+                                                </items>
+                                            </well>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns2>
+                        </items>
+                    </properties>
+                    <common
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Common Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <role
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Location"
+                                                fieldLabel="Location"
+                                                name="./location"/>
+                                            <level
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Area"
+                                                name="./area">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <item0
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Region 1"
+                                                        value="default"/>
+                                                    <item1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Region 2"
+                                                        value="region2"/>
+                                                    <item2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Region 3"
+                                                        value="region3"/>
+                                                    <item3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Region 4"
+                                                        value="region4"/>
+                                                </items>
+                                            </level>
+                                            <linkURL
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                                                fieldDescription="Links the title. Path to a content page, external URL or page anchor."
+                                                fieldLabel="Link"
+                                                name="./linkURL"
+                                                rootPath="/content"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </common>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

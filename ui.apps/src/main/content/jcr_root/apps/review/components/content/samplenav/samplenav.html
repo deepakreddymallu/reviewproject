@@ -1,0 +1,17 @@
+SAMPLENAV
+<sly data-sly-use.model="${'com.adobe.cq.wcm.core.components.models.Navigationnew'}"/>
+<ul data-sly-list.primaryLink="${model.primaryLinks}">TEST
+<li>${primaryLink.name}
+<ul data-sly-list.secondaryLink="${primaryLink.secondaryLinks}">
+<li>
+<b>Secondary:</b> ${secondaryLink.name} <br/>${secondaryLink.tertiaryLinks.size}
+<ul data-sly-list.tertiaryLink="${secondaryLink.tertiaryLinks}">
+<li>
+<b>Tertiary: </b> ${tertiaryLink.name}
+</li>
+</ul>
+</li>
+</ul> 
+</li>
+</ul>
+

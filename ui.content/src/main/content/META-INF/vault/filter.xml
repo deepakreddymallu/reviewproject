@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/deepak" mode="merge"/>
+    <filter root="/content/deepak" mode="merge"/>
+    <filter root="/content/dam/deepak" mode="merge">
+        <exclude pattern="/content/dam/deepak(/.*)?"/>
+        <include pattern="/content/dam/deepak/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/deepak/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/deepak" mode="merge"/>
+</workspaceFilter>
